@@ -31,7 +31,7 @@ local assets = {
         Asset( "SOUND", "sound/wilson.fsb" ),
         Asset( "ANIM", "anim/beard.zip" ),
 
-        Asset( "ANIM", "anim/esctemplate.zip" ),
+        Asset( "ANIM", "anim/wtw_whitney.zip" ),
 }
 local prefabs = {}
 local start_inv = {
@@ -39,27 +39,20 @@ local start_inv = {
 }
 
 local fn = function(inst)
-	
+
 	-- choose which sounds this character will play
 	inst.soundsname = "willow"
 
 	-- Minimap icon
-	inst.MiniMapEntity:SetIcon( "esctemplate.tex" )
-	
-	-- Stats	
+	inst.MiniMapEntity:SetIcon( "wtw_whitney.tex" )
+
+	-- Stats
 	inst.components.health:SetMaxHealth(150)
 	inst.components.hunger:SetMax(150)
 	inst.components.sanity:SetMax(200)
-	
+
 	-- Damage multiplier (optional)
-    inst.components.combat.damagemultiplier = 1
-	
-	-- Hunger rate (optional)
-	inst.components.hunger.hungerrate = 1 * TUNING.WILSON_HUNGER_RATE
-	
-	-- Movement speed (optional)
-	inst.components.locomotor.walkspeed = 4
-	inst.components.locomotor.runspeed = 6
+  inst.components.combat.damagemultiplier = 1
 end
 
-return MakePlayerCharacter("esctemplate", prefabs, assets, fn, start_inv)
+return MakePlayerCharacter("wtw_whitney", prefabs, assets, fn, start_inv)
