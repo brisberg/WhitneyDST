@@ -1,1 +1,4 @@
-.DS_STORE
+.DS_Store
+**/.fsbcache/
+**/*.fdp.bak
+**/*.fdp.autosave

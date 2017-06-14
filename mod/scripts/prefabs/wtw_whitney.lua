@@ -28,8 +28,6 @@ local assets = {
         Asset( "ANIM", "anim/player_one_man_band.zip" ),
         Asset( "ANIM", "anim/shadow_hands.zip" ),
         Asset( "SOUND", "sound/sfx.fsb" ),
-        Asset( "SOUND", "sound/wilson.fsb" ),
-        Asset( "ANIM", "anim/beard.zip" ),
 
         Asset( "ANIM", "anim/wtw_whitney.zip" ),
 }
@@ -41,7 +39,7 @@ local start_inv = {
 local fn = function(inst)
 
 	-- choose which sounds this character will play
-	inst.soundsname = "willow"
+	inst.soundsname = "wtw_whitney"
 
 	-- Minimap icon
 	inst.MiniMapEntity:SetIcon( "wtw_whitney.tex" )
