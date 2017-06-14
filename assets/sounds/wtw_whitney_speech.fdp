@@ -1132,7 +1132,7 @@
 <notes></notes>
 <currentplatform>PC</currentplatform>
 <_PC_encryptionkey></_PC_encryptionkey>
-<_PC_builddirectory></_PC_builddirectory>
+<_PC_builddirectory>../../mod/sound</_PC_builddirectory>
 <_PC_audiosourcedirectory></_PC_audiosourcedirectory>
 <_PC_prebuildcommands></_PC_prebuildcommands>
 <_PC_postbuildcommands></_PC_postbuildcommands>
