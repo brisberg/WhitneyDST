@@ -36,8 +36,8 @@ GLOBAL.STRINGS.CHARACTERS.WTW_WHITNEY = require "speech_wtw_whitney"
 -- Let the game know character is male, female, or robot
 table.insert(GLOBAL.CHARACTER_GENDERS.FEMALE, "wtw_whitney")
 
-RemapSoundEvent( "dontstarve/characters/wtw_whitney/death_voice", "whitney_speech/characters/wtw_whitney/death_voice" )
-RemapSoundEvent( "dontstarve/characters/wtw_whitney/hurt", "whitney_speech/characters/wtw_whitney/hurt" )
-RemapSoundEvent( "dontstarve/characters/wtw_whitney/talk_LP", "whitney_speech/characters/wtw_whitney/talk_LP" )
+RemapSoundEvent( "dontstarve/characters/wtw_whitney/death_voice", "wtw_whitney_speech/characters/wtw_whitney/death_voice" )
+RemapSoundEvent( "dontstarve/characters/wtw_whitney/hurt", "wtw_whitney_speech/characters/wtw_whitney/hurt" )
+RemapSoundEvent( "dontstarve/characters/wtw_whitney/talk_LP", "wtw_whitney_speech/characters/wtw_whitney/talk_LP" )
 AddMinimapAtlas("images/map_icons/wtw_whitney.xml")
 AddModCharacter("wtw_whitney")

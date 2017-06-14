@@ -1,5 +1,5 @@
 <project>
-<name>whitney_speech</name>
+<name>wtw_whitney_speech</name>
 <guid>{42e78e79-31ac-43a9-8456-5c0fd4f20b00}</guid>
 <version>4</version>
 <eventgroup_nextid>0</eventgroup_nextid>
@@ -11,7 +11,7 @@
 <build_programmerreport>0</build_programmerreport>
 <build_applytemplate>0</build_applytemplate>
 <build_continue_on_error>0</build_continue_on_error>
-<currentbank>whitney_speech</currentbank>
+<currentbank>wtw_whitney_speech</currentbank>
 <currentlanguage>default</currentlanguage>
 <primarylanguage>default</primarylanguage>
 <language>default</language>
@@ -69,19 +69,19 @@
 <entrylistmode>1</entrylistmode>
 <waveform>
 <filename>Whitney-01.wav</filename>
-<soundbankname>whitney_speech</soundbankname>
+<soundbankname>wtw_whitney_speech</soundbankname>
 <weight>100</weight>
 <percentagelocked>0</percentagelocked>
 </waveform>
 <waveform>
 <filename>Whitney-02.wav</filename>
-<soundbankname>whitney_speech</soundbankname>
+<soundbankname>wtw_whitney_speech</soundbankname>
 <weight>100</weight>
 <percentagelocked>0</percentagelocked>
 </waveform>
 <waveform>
 <filename>Whitney-03.wav</filename>
-<soundbankname>whitney_speech</soundbankname>
+<soundbankname>wtw_whitney_speech</soundbankname>
 <weight>100</weight>
 <percentagelocked>0</percentagelocked>
 </waveform>
@@ -120,7 +120,7 @@
 <entrylistmode>1</entrylistmode>
 <waveform>
 <filename>Whitney-04.wav</filename>
-<soundbankname>whitney_speech</soundbankname>
+<soundbankname>wtw_whitney_speech</soundbankname>
 <weight>100</weight>
 <percentagelocked>0</percentagelocked>
 </waveform>
@@ -159,7 +159,7 @@
 <entrylistmode>1</entrylistmode>
 <waveform>
 <filename>Whitney-05.wav</filename>
-<soundbankname>whitney_speech</soundbankname>
+<soundbankname>wtw_whitney_speech</soundbankname>
 <weight>100</weight>
 <percentagelocked>0</percentagelocked>
 </waveform>
@@ -337,7 +337,7 @@
 <shuffleglobal>0</shuffleglobal>
 <sequentialrememberposition>0</sequentialrememberposition>
 <sequentialglobal>0</sequentialglobal>
-<bankname>whitney_speech</bankname>
+<bankname>wtw_whitney_speech</bankname>
 <_PC_resamplemode>Automatic</_PC_resamplemode>
 <_PC_automaticsampleratepercentage>100</_PC_automaticsampleratepercentage>
 <_PC_fixedsamplerate>48000</_PC_fixedsamplerate>
@@ -552,7 +552,7 @@
 <shuffleglobal>0</shuffleglobal>
 <sequentialrememberposition>0</sequentialrememberposition>
 <sequentialglobal>0</sequentialglobal>
-<bankname>whitney_speech</bankname>
+<bankname>wtw_whitney_speech</bankname>
 <_PC_resamplemode>Automatic</_PC_resamplemode>
 <_PC_automaticsampleratepercentage>100</_PC_automaticsampleratepercentage>
 <_PC_fixedsamplerate>48000</_PC_fixedsamplerate>
@@ -746,7 +746,7 @@
 <shuffleglobal>0</shuffleglobal>
 <sequentialrememberposition>0</sequentialrememberposition>
 <sequentialglobal>0</sequentialglobal>
-<bankname>whitney_speech</bankname>
+<bankname>wtw_whitney_speech</bankname>
 <_PC_resamplemode>Automatic</_PC_resamplemode>
 <_PC_automaticsampleratepercentage>100</_PC_automaticsampleratepercentage>
 <_PC_fixedsamplerate>48000</_PC_fixedsamplerate>
@@ -840,10 +840,11 @@
 <_IOS_quality>50</_IOS_quality>
 <_IOS_forcesoftware>1</_IOS_forcesoftware>
 <_IOS_maxstreams>10</_IOS_maxstreams>
+<_lang_default_filename_prefix></_lang_default_filename_prefix>
 <_lang_default_rebuild>0</_lang_default_rebuild>
 </default_soundbank_props>
 <soundbank>
-<name>whitney_speech</name>
+<name>wtw_whitney_speech</name>
 <guid>{23196258-b2b6-4fac-8400-d0c4a9b185d3}</guid>
 <load_into_rsx>0</load_into_rsx>
 <disable_seeking>0</disable_seeking>
@@ -1125,6 +1126,7 @@
 <_IOS_quality>50</_IOS_quality>
 <_IOS_forcesoftware>1</_IOS_forcesoftware>
 <_IOS_maxstreams>10</_IOS_maxstreams>
+<_lang_default_filename_prefix></_lang_default_filename_prefix>
 <_lang_default_rebuild>1</_lang_default_rebuild>
 </soundbank>
 <notes></notes>
