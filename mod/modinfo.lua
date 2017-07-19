@@ -14,6 +14,7 @@ api_version = 6
 -- Compatibility
 dont_starve_compatible = true
 reign_of_giants_compatible = true
+shipwrecked_compatible = true
 
 -- Icon
 icon_atlas = "modicon.xml"
