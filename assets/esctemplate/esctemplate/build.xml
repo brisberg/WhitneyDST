@@ -1,0 +1,173 @@
+<Build name="esctemplate.scml">
+ <Symbol name="face">
+  <Frame framenum="0" duration="1" image="face-0" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="1" duration="1" image="face-1" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="2" duration="1" image="face-2" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="3" duration="1" image="face-3" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="4" duration="1" image="face-4" w="200" h="200" x="-24.549400" y="14.000404"/>
+  <Frame framenum="5" duration="1" image="face-5" w="200" h="200" x="-24.549400" y="14.000404"/>
+  <Frame framenum="6" duration="1" image="face-6" w="200" h="200" x="-24.549400" y="14.000404"/>
+  <Frame framenum="7" duration="1" image="face-7" w="200" h="200" x="-24.549400" y="14.000404"/>
+  <Frame framenum="8" duration="1" image="face-8" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="9" duration="1" image="face-9" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="10" duration="1" image="face-10" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="11" duration="1" image="face-11" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="12" duration="1" image="face-12" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="13" duration="1" image="face-13" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="14" duration="1" image="face-14" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="15" duration="1" image="face-15" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="16" duration="1" image="face-16" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="17" duration="1" image="face-17" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="18" duration="1" image="face-18" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="19" duration="1" image="face-19" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="20" duration="1" image="face-20" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="21" duration="1" image="face-21" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="22" duration="1" image="face-22" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="23" duration="1" image="face-23" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="24" duration="1" image="face-24" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="25" duration="1" image="face-25" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="26" duration="1" image="face-26" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="27" duration="1" image="face-27" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="28" duration="1" image="face-28" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="29" duration="1" image="face-29" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="30" duration="1" image="face-30" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="31" duration="1" image="face-31" w="200" h="200" x="-8.549408" y="14.100395"/>
+  <Frame framenum="32" duration="1" image="face-32" w="200" h="200" x="-8.549408" y="14.100395"/>
+ </Symbol>
+ <Symbol name="headbase">
+  <Frame framenum="0" duration="1" image="headbase-0" w="300" h="300" x="-6.249603" y="-94.024506"/>
+  <Frame framenum="1" duration="1" image="headbase-1" w="300" h="300" x="-13.549500" y="-95.424606"/>
+  <Frame framenum="2" duration="1" image="headbase-2" w="300" h="300" x="-6.249603" y="-94.024506"/>
+  <Frame framenum="3" duration="1" image="headbase-3" w="300" h="300" x="-6.249603" y="-94.024506"/>
+  <Frame framenum="4" duration="1" image="headbase-4" w="300" h="300" x="-6.249603" y="-94.024506"/>
+ </Symbol>
+ <Symbol name="hair">
+  <Frame framenum="0" duration="1" image="hair-0" w="400" h="400" x="-2.252014" y="-47.475189"/>
+  <Frame framenum="1" duration="1" image="hair-1" w="400" h="400" x="-23.174408" y="-40.099197"/>
+  <Frame framenum="2" duration="1" image="hair-2" w="400" h="400" x="-2.252014" y="-47.475189"/>
+  <Frame framenum="3" duration="1" image="hair-3" w="400" h="400" x="-2.252014" y="-47.475189"/>
+ </Symbol>
+ <Symbol name="torso">
+  <Frame framenum="0" duration="1" image="torso-0" w="160" h="120" x="0.000641" y="-32.174522"/>
+  <Frame framenum="1" duration="1" image="torso-1" w="160" h="120" x="-2.499359" y="-31.474560"/>
+  <Frame framenum="2" duration="1" image="torso-2" w="160" h="120" x="3.375519" y="-32.174522"/>
+  <Frame framenum="3" duration="1" image="torso-3" w="160" h="120" x="0.000481" y="-37.149597"/>
+  <Frame framenum="4" duration="1" image="torso-4" w="160" h="120" x="6.150558" y="-36.524521"/>
+  <Frame framenum="5" duration="1" image="torso-5" w="160" h="120" x="-4.324326" y="-36.699600"/>
+  <Frame framenum="6" duration="1" image="torso-6" w="160" h="120" x="0.000641" y="-34.599480"/>
+  <Frame framenum="7" duration="1" image="torso-7" w="160" h="120" x="-7.999359" y="-34.849564"/>
+  <Frame framenum="8" duration="1" image="torso-8" w="160" h="120" x="0.700638" y="-34.799522"/>
+  <Frame framenum="9" duration="1" image="torso-9" w="160" h="120" x="6.250557" y="-6.749523"/>
+  <Frame framenum="10" duration="1" image="torso-10" w="160" h="120" x="-2.499359" y="-31.474560"/>
+ </Symbol>
+ <Symbol name="foot">
+  <Frame framenum="0" duration="1" image="foot-0" w="100" h="100" x="-15.000000" y="15.000000"/>
+  <Frame framenum="1" duration="1" image="foot-1" w="100" h="100" x="0.000000" y="15.000000"/>
+  <Frame framenum="2" duration="1" image="foot-2" w="100" h="100" x="7.500000" y="15.000000"/>
+  <Frame framenum="3" duration="1" image="foot-3" w="100" h="100" x="-15.000000" y="15.000000"/>
+  <Frame framenum="4" duration="1" image="foot-4" w="100" h="100" x="-30.000000" y="0.000000"/>
+  <Frame framenum="5" duration="1" image="foot-5" w="100" h="100" x="0.000000" y="15.000000"/>
+  <Frame framenum="6" duration="1" image="foot-6" w="100" h="100" x="-15.000000" y="15.000000"/>
+  <Frame framenum="7" duration="1" image="foot-7" w="100" h="100" x="0.000000" y="15.000000"/>
+ </Symbol>
+ <Symbol name="hand">
+  <Frame framenum="0" duration="1" image="hand-0" w="100" h="100" x="0.725601" y="12.125404"/>
+  <Frame framenum="1" duration="1" image="hand-1" w="100" h="100" x="2.250500" y="13.600395"/>
+  <Frame framenum="2" duration="1" image="hand-2" w="100" h="100" x="0.075600" y="9.975399"/>
+  <Frame framenum="3" duration="1" image="hand-3" w="100" h="100" x="-1.324398" y="11.450397"/>
+  <Frame framenum="4" duration="1" image="hand-4" w="100" h="100" x="4.175602" y="16.675499"/>
+  <Frame framenum="5" duration="1" image="hand-5" w="100" h="100" x="-1.774502" y="9.900398"/>
+  <Frame framenum="6" duration="1" image="hand-6" w="100" h="100" x="-10.499500" y="19.850395"/>
+  <Frame framenum="7" duration="1" image="hand-7" w="100" h="100" x="10.100601" y="19.075500"/>
+  <Frame framenum="8" duration="1" image="hand-8" w="100" h="100" x="13.700600" y="17.000404"/>
+  <Frame framenum="9" duration="1" image="hand-9" w="100" h="100" x="11.500500" y="13.050400"/>
+  <Frame framenum="10" duration="1" image="hand-10" w="100" h="100" x="3.400600" y="18.825500"/>
+  <Frame framenum="11" duration="1" image="hand-11" w="100" h="100" x="0.725601" y="12.125404"/>
+  <Frame framenum="12" duration="1" image="hand-12" w="100" h="100" x="2.250500" y="13.600395"/>
+  <Frame framenum="13" duration="1" image="hand-13" w="100" h="100" x="-0.149399" y="19.700401"/>
+  <Frame framenum="14" duration="1" image="hand-14" w="100" h="100" x="4.175602" y="16.675499"/>
+  <Frame framenum="15" duration="1" image="hand-15" w="150" h="200" x="8.325600" y="71.525391"/>
+  <Frame framenum="16" duration="1" image="hand-16" w="100" h="100" x="13.700600" y="17.000404"/>
+  <Frame framenum="17" duration="1" image="hand-17" w="100" h="100" x="-0.149399" y="19.700401"/>
+ </Symbol>
+ <Symbol name="leg">
+  <Frame framenum="0" duration="1" image="leg-0" w="60" h="80" x="-3.724442" y="20.100479"/>
+  <Frame framenum="1" duration="1" image="leg-1" w="60" h="80" x="-2.649479" y="19.475521"/>
+  <Frame framenum="2" duration="1" image="leg-2" w="60" h="80" x="-0.649498" y="20.925522"/>
+  <Frame framenum="3" duration="1" image="leg-3" w="60" h="80" x="-5.224499" y="23.375519"/>
+  <Frame framenum="4" duration="1" image="leg-4" w="60" h="60" x="-11.299500" y="16.024979"/>
+  <Frame framenum="5" duration="1" image="leg-5" w="60" h="80" x="-3.474480" y="23.150482"/>
+  <Frame framenum="6" duration="1" image="leg-6" w="60" h="60" x="-17.173981" y="11.425442"/>
+  <Frame framenum="7" duration="1" image="leg-7" w="60" h="60" x="-6.049438" y="11.975460"/>
+  <Frame framenum="8" duration="1" image="leg-8" w="60" h="80" x="-0.467819" y="28.734001"/>
+  <Frame framenum="9" duration="1" image="leg-9" w="60" h="80" x="-3.724442" y="20.100479"/>
+  <Frame framenum="10" duration="1" image="leg-10" w="60" h="80" x="-5.224499" y="23.375519"/>
+ </Symbol>
+ <Symbol name="arm_lower">
+  <Frame framenum="0" duration="1" image="arm_lower-0" w="50" h="50" x="-0.799450" y="16.650002"/>
+  <Frame framenum="1" duration="1" image="arm_lower-1" w="50" h="80" x="-1.199451" y="23.675198"/>
+  <Frame framenum="2" duration="1" image="arm_lower-2" w="80" h="50" x="-16.749439" y="7.650501"/>
+  <Frame framenum="3" duration="1" image="arm_lower-3" w="50" h="50" x="-0.799450" y="16.650002"/>
+  <Frame framenum="4" duration="1" image="arm_lower-4" w="50" h="80" x="-1.199451" y="23.675198"/>
+  <Frame framenum="5" duration="1" image="arm_lower-5" w="60" h="60" x="-0.424501" y="13.250458"/>
+  <Frame framenum="6" duration="1" image="arm_lower-6" w="80" h="50" x="-16.749439" y="7.650501"/>
+ </Symbol>
+ <Symbol name="arm_upper">
+  <Frame framenum="0" duration="1" image="arm_upper-0" w="80" h="80" x="-0.999443" y="18.600479"/>
+  <Frame framenum="1" duration="1" image="arm_upper-1" w="80" h="80" x="-2.574482" y="19.175438"/>
+  <Frame framenum="2" duration="1" image="arm_upper-2" w="80" h="80" x="-0.299438" y="16.850517"/>
+  <Frame framenum="3" duration="1" image="arm_upper-3" w="80" h="80" x="-1.974480" y="18.500481"/>
+  <Frame framenum="4" duration="1" image="arm_upper-4" w="80" h="80" x="0.350479" y="8.475441"/>
+  <Frame framenum="5" duration="1" image="arm_upper-5" w="80" h="80" x="-0.999443" y="18.600479"/>
+  <Frame framenum="6" duration="1" image="arm_upper-6" w="80" h="80" x="-2.574482" y="19.175438"/>
+ </Symbol>
+ <Symbol name="cheeks">
+  <Frame framenum="0" duration="1" image="cheeks-0" w="64" h="60" x="-0.549503" y="-0.024479"/>
+  <Frame framenum="1" duration="1" image="cheeks-1" w="64" h="60" x="2.450497" y="-1.074480"/>
+ </Symbol>
+ <Symbol name="hair_hat">
+  <Frame framenum="0" duration="1" image="hair_hat-0" w="400" h="400" x="-2.252014" y="-47.475189"/>
+  <Frame framenum="1" duration="1" image="hair_hat-1" w="400" h="400" x="-23.174408" y="-40.099197"/>
+  <Frame framenum="2" duration="1" image="hair_hat-2" w="400" h="400" x="-2.252014" y="-47.475189"/>
+  <Frame framenum="3" duration="1" image="hair_hat-3" w="400" h="400" x="-2.252014" y="-47.475189"/>
+ </Symbol>
+ <Symbol name="headbase_hat">
+  <Frame framenum="0" duration="1" image="headbase_hat-0" w="300" h="300" x="-6.249603" y="-94.024506"/>
+  <Frame framenum="1" duration="1" image="headbase_hat-1" w="300" h="300" x="-13.549500" y="-95.424606"/>
+  <Frame framenum="2" duration="1" image="headbase_hat-2" w="300" h="300" x="-6.249603" y="-94.024506"/>
+  <Frame framenum="3" duration="1" image="headbase_hat-3" w="300" h="300" x="-6.249603" y="-94.024506"/>
+  <Frame framenum="4" duration="1" image="headbase_hat-4" w="300" h="300" x="-6.249603" y="-94.024506"/>
+ </Symbol>
+ <Symbol name="hairpigtails">
+  <Frame framenum="0" duration="1" image="hairpigtails-0" w="250" h="300" x="-53.324249" y="11.550308"/>
+  <Frame framenum="1" duration="1" image="hairpigtails-1" w="250" h="300" x="42.675499" y="-2.599503"/>
+  <Frame framenum="2" duration="1" image="hairpigtails-2" w="250" h="300" x="-53.324249" y="11.550308"/>
+  <Frame framenum="3" duration="1" image="hairpigtails-3" w="250" h="300" x="-53.324249" y="11.550308"/>
+  <Frame framenum="4" duration="1" image="hairpigtails-4" w="250" h="300" x="42.675499" y="-2.599503"/>
+ </Symbol>
+ <Symbol name="skirt">
+  <Frame framenum="0" duration="1" image="skirt-0" w="160" h="120" x="-0.349434" y="7.425362"/>
+  <Frame framenum="1" duration="1" image="skirt-1" w="160" h="120" x="0.175522" y="7.425362"/>
+  <Frame framenum="2" duration="1" image="skirt-2" w="160" h="120" x="-7.499527" y="-3.549480"/>
+  <Frame framenum="3" duration="1" image="skirt-3" w="160" h="120" x="9.825600" y="-9.024483"/>
+  <Frame framenum="4" duration="1" image="skirt-4" w="160" h="120" x="-0.349434" y="7.425362"/>
+ </Symbol>
+ <Symbol name="tail">
+  <Frame framenum="0" duration="1" image="tail-0" w="250" h="100" x="-32.000000" y="0.000000"/>
+  <Frame framenum="1" duration="1" image="tail-1" w="250" h="100" x="-32.000000" y="0.000000"/>
+  <Frame framenum="2" duration="1" image="tail-2" w="250" h="100" x="-32.000000" y="0.000000"/>
+  <Frame framenum="3" duration="1" image="tail-3" w="250" h="100" x="-32.000000" y="0.000000"/>
+  <Frame framenum="4" duration="1" image="tail-4" w="250" h="100" x="-32.000000" y="0.000000"/>
+  <Frame framenum="5" duration="1" image="tail-5" w="250" h="100" x="-32.000000" y="0.000000"/>
+  <Frame framenum="6" duration="1" image="tail-6" w="250" h="100" x="-32.000000" y="0.000000"/>
+  <Frame framenum="7" duration="1" image="tail-7" w="250" h="100" x="-32.000000" y="0.000000"/>
+  <Frame framenum="8" duration="1" image="tail-8" w="250" h="100" x="-32.000000" y="0.000000"/>
+  <Frame framenum="9" duration="1" image="tail-9" w="250" h="100" x="-32.000000" y="0.000000"/>
+  <Frame framenum="10" duration="1" image="tail-10" w="250" h="100" x="-32.000000" y="0.000000"/>
+  <Frame framenum="11" duration="1" image="tail-11" w="250" h="100" x="-32.000000" y="0.000000"/>
+ </Symbol>
+ <Symbol name="hairfront">
+  <Frame framenum="0" duration="1" image="hairfront-0" w="400" h="400" x="-2.252014" y="-47.475189"/>
+  <Frame framenum="1" duration="1" image="hairfront-1" w="400" h="400" x="-23.174408" y="-40.099197"/>
+ </Symbol>
+</Build>
