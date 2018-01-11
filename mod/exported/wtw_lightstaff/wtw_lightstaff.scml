@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+    <folder id="0" name="grass">
+        <file id="0" name="grass/grass-0.png" width="68" height="52" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <folder id="1" name="lightstaff">
+        <file id="0" name="lightstaff/bluestaff-0.png" width="120" height="248" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="wtw_lightstaff_anim">
+        <animation id="0" name="idle" length="1000">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="bluestaff" folder="1" file="0" abs_x="-73" abs_y="230" abs_pivot_x="0" abs_pivot_y="1" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="0"/>
+                    <object_ref id="1" name="grass" folder="0" file="0" abs_x="-32" abs_y="31" abs_pivot_x="0" abs_pivot_y="1" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="grass">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="-32" y="31" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="bluestaff">
+                <key id="0" spin="0">
+                    <object folder="1" file="0" x="-73" y="230" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

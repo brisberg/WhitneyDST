@@ -1,5 +1,6 @@
 PrefabFiles = {
 	"wtw_whitney",
+	"wtw_lightstaff",
 }
 
 Assets = {
