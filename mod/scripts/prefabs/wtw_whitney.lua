@@ -28,31 +28,29 @@ local assets = {
         Asset( "ANIM", "anim/player_one_man_band.zip" ),
         Asset( "ANIM", "anim/shadow_hands.zip" ),
         Asset( "SOUND", "sound/sfx.fsb" ),
-
-        Asset( "ANIM", "anim/wtw_whitney.zip" ),
 }
-local prefabs = {
-}
+local prefabs = {}
 local start_inv = {
 	-- Custom starting items
   "wtw_lightstaff",
 }
 
-local fn = function(inst)
-
-	-- choose which sounds this character will play
-	inst.soundsname = "wtw_whitney"
-
+local common_fn = function(inst)
 	-- Minimap icon
 	inst.MiniMapEntity:SetIcon( "wtw_whitney.tex" )
-
-	-- Stats
-	inst.components.health:SetMaxHealth(150)
-	inst.components.hunger:SetMax(150)
-	inst.components.sanity:SetMax(200)
-
-	-- Damage multiplier (optional)
-  inst.components.combat.damagemultiplier = 1
 end
 
-return MakePlayerCharacter("wtw_whitney", prefabs, assets, fn, start_inv)
+local master_fn = function(inst)
+  	-- choose which sounds this character will play
+  	inst.soundsname = "wtw_whitney"
+
+  	-- Stats
+  	inst.components.health:SetMaxHealth(150)
+  	inst.components.hunger:SetMax(150)
+  	inst.components.sanity:SetMax(200)
+
+  	-- Damage multiplier (optional)
+    inst.components.combat.damagemultiplier = 1
+end
+
+return MakePlayerCharacter("wtw_whitney", prefabs, assets, common_fn, master_fn, start_inv)

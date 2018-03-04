@@ -1,5 +1,6 @@
 PrefabFiles = {
 	"wtw_whitney",
+	"wtw_whitney_none",
 	"wtw_lightstaff",
 }
 
@@ -18,6 +19,15 @@ Assets = {
 
 	Asset( "IMAGE", "images/map_icons/wtw_whitney.tex" ),
 	Asset( "ATLAS", "images/map_icons/wtw_whitney.xml" ),
+
+	Asset( "IMAGE", "images/avatars/avatar_wtw_whitney.tex" ),
+	Asset( "ATLAS", "images/avatars/avatar_wtw_whitney.xml" ),
+
+	Asset( "IMAGE", "images/avatars/avatar_ghost_wtw_whitney.tex" ),
+	Asset( "ATLAS", "images/avatars/avatar_ghost_wtw_whitney.xml" ),
+
+	Asset( "IMAGE", "images/avatars/self_inspect_wtw_whitney.tex" ),
+	Asset( "ATLAS", "images/avatars/self_inspect_wtw_whitney.xml" ),
 
 	Asset("SOUNDPACKAGE", "sound/wtw_whitney_speech.fev"),
 	Asset("SOUND", "sound/wtw_whitney_speech.fsb"),

@@ -1,7 +1,12 @@
+local name = "wtw_lightstaff"
+
 local assets =
 {
-    Asset("ANIM", "anim/wtw_lightstaff.zip"),
-    Asset("ANIM", "anim/swap_wtw_lightstaff.zip"),
+    Asset("ANIM", "anim/"..name..".zip"),
+    Asset("ANIM", "anim/swap_"..name..".zip"),
+
+    Asset( "IMAGE", "images/inventoryimages/"..name..".tex" ),
+    Asset( "ATLAS", "images/inventoryimages/"..name..".xml" ),
 }
 
 local function onfinished(inst)
@@ -20,21 +25,21 @@ local function fn(colour, tags, hasskin)
     inst.entity:AddTransform()
     inst.entity:AddAnimState()
     inst.entity:AddSoundEmitter()
-    -- inst.entity:AddNetwork()
+    inst.entity:AddNetwork()
 
     MakeInventoryPhysics(inst)
 
-    inst.AnimState:SetBuild("wtw_lightstaff")
-    inst.AnimState:SetBank("wtw_lightstaff_anim")
+    inst.AnimState:SetBuild(name)
+    inst.AnimState:SetBank(name.."_anim")
     inst.AnimState:PlayAnimation("idle")
 
     inst:AddTag("nopunch")
 
-    -- inst.entity:SetPristine()
+    inst.entity:SetPristine()
 
-    -- if not TheWorld.ismastersim then
-    --     return inst
-    -- end
+    if not TheWorld.ismastersim then
+        return inst
+    end
 
     -------
     inst:AddComponent("finiteuses")
@@ -43,13 +48,14 @@ local function fn(colour, tags, hasskin)
     inst:AddComponent("inspectable")
 
     inst:AddComponent("inventoryitem")
+    inst.components.inventoryitem.atlasname = "images/inventoryimages/"..name..".xml"
 
     -- inst:AddComponent("tradable")
 
     inst:AddComponent("equippable")
 
     inst.components.equippable:SetOnEquip(function(inst, owner)
-        owner.AnimState:OverrideSymbol("swap_object", "swap_wtw_lightstaff", "swap_lightstaff")
+        owner.AnimState:OverrideSymbol("swap_object", "swap_"..name, "swap_lightstaff")
         owner.AnimState:Show("ARM_carry")
         owner.AnimState:Hide("ARM_normal")
     end)
@@ -58,4 +64,7 @@ local function fn(colour, tags, hasskin)
     return inst
 end
 
-return Prefab("wtw_lightstaff", fn, assets)
+STRINGS.NAMES.WTW_LIGHTSTAFF = "Lightstaff"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.WTW_LIGHTSTAFF = "The result of nature and starlight"
+
+return Prefab(name, fn, assets)
