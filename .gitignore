@@ -2,3 +2,8 @@
 **/.fsbcache/
 **/*.fdp.bak
 **/*.fdp.autosave
+node_modules/
+mod/**/*.zip
+mod/**/*.tex
+mod/**/*.xml
+build/
