@@ -28,7 +28,8 @@ local assets = {
         Asset( "ANIM", "anim/shadow_hands.zip" ),
         Asset( "SOUND", "sound/sfx.fsb" ),
 }
-local prefabs = {}
+local prefabs = {
+}
 local start_inv = {
 	-- Custom starting items
   "wtw_lightstaff",
