@@ -31,9 +31,11 @@ local assets = {
 
         Asset( "ANIM", "anim/wtw_whitney.zip" ),
 }
-local prefabs = {}
+local prefabs = {
+}
 local start_inv = {
 	-- Custom starting items
+  "wtw_lightstaff",
 }
 
 local fn = function(inst)
