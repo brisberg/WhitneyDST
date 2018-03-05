@@ -17,12 +17,13 @@ function loadfn(env)
               master_postinit(...)
           end
       end
-      return require("prefabs/player_common")(name, customprefabs, customassets, fn, starting_inventory)
+      return GLOBAL.require("prefabs/player_common")(name, customprefabs, customassets, fn, starting_inventory)
   end
   pf.CreateEntity = function()
     local inst = GLOBAL.CreateEntity()
-    function inst:AddNetwork(...) end
-    function inst:SetPristine(...) end
+    local entity = GLOBAL.getmetatable(inst.entity)
+    entity.__index.AddNetwork = function(...) end
+    entity.__index.SetPristine = function(...) end
     return inst
   end
 
