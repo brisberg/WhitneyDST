@@ -20,7 +20,7 @@ local function onunequip(inst, owner)
 end
 
 local function fn(colour, tags, hasskin)
-    local inst = CreateEntity()
+    local inst = pf.CreateEntity()
 
     inst.entity:AddTransform()
     inst.entity:AddAnimState()

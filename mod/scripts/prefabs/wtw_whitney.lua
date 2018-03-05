@@ -1,5 +1,4 @@
-
-local MakePlayerCharacter = require "prefabs/player_common"
+-- local MakePlayerCharacter = require "prefabs/player_common"
 
 
 local assets = {
@@ -53,4 +52,4 @@ local master_fn = function(inst)
     inst.components.combat.damagemultiplier = 1
 end
 
-return MakePlayerCharacter("wtw_whitney", prefabs, assets, common_fn, master_fn, start_inv)
+return pf.MakePlayerCharacter("wtw_whitney", prefabs, assets, common_fn, master_fn, start_inv)

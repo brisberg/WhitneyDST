@@ -32,8 +32,14 @@ Assets = {
 	Asset("SOUNDPACKAGE", "sound/wtw_whitney_speech.fev"),
 	Asset("SOUND", "sound/wtw_whitney_speech.fsb"),
 }
+if GLOBAL.TheSim:GetGameID() == "DS" then
+	modimport "scripts/lib/polyfill-ds.lua"
+elseif GLOBAL.TheSim:GetGameID() == "DST" then
+	modimport "scripts/lib/polyfill-dst.lua"
+end
 
 local require = GLOBAL.require
+local pf = GLOBAL.pf
 
 -- The character select screen lines
 GLOBAL.STRINGS.CHARACTER_TITLES.wtw_whitney = "The Witch"

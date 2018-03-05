@@ -14,10 +14,10 @@ local base_prefab = "wtw_whitney"
 
 local tags = {"WTW_WHITNEY", "CHARACTER"} --字符
 
-return CreatePrefabSkin("wtw_whitney_none",
+return pf.CreatePrefabSkin("wtw_whitney_none",
 {
 	base_prefab = base_prefab,
-	skins = skins, 
+	skins = skins,
 	assets = assets,
 	tags = tags,
 
