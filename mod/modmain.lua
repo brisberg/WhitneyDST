@@ -51,4 +51,4 @@ RemapSoundEvent( "dontstarve/characters/wtw_whitney/death_voice", "wtw_whitney_s
 RemapSoundEvent( "dontstarve/characters/wtw_whitney/hurt", "wtw_whitney_speech/characters/wtw_whitney/hurt" )
 RemapSoundEvent( "dontstarve/characters/wtw_whitney/talk_LP", "wtw_whitney_speech/characters/wtw_whitney/talk_LP" )
 AddMinimapAtlas("images/map_icons/wtw_whitney.xml")
-AddModCharacter("wtw_whitney")
+AddModCharacter("wtw_whitney", "FEMALE")
