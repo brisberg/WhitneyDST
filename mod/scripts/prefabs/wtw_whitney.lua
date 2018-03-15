@@ -32,6 +32,7 @@ local prefabs = {}
 local start_inv = {
 	-- Custom starting items
   "wtw_lightstaff",
+  "wtw_hat",
 }
 
 local common_fn = function(inst)
