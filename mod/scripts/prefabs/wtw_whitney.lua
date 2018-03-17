@@ -27,13 +27,25 @@ local assets = {
         Asset( "ANIM", "anim/player_one_man_band.zip" ),
         Asset( "ANIM", "anim/shadow_hands.zip" ),
         Asset( "SOUND", "sound/sfx.fsb" ),
+
+        -- custom hat sprites
+        Asset( "ANIM", "anim/wtw_hat.zip" ),
 }
 local prefabs = {}
 local start_inv = {
 	-- Custom starting items
   "wtw_lightstaff",
-  "wtw_hat",
 }
+
+local show_witch_hat = function(inst)
+  inst.AnimState:OverrideSymbol("swap_hat", "wtw_hat", "swap_hat")
+  inst.AnimState:Show("HAT")
+  inst.AnimState:Show("HAIR_HAT")
+  inst.AnimState:Show("HEAD_HAT")
+  inst.AnimState:Hide("HAIR_NOHAT")
+  inst.AnimState:Hide("HAIR")
+  inst.AnimState:Hide("HEAD")
+end
 
 local common_fn = function(inst)
 	-- Minimap icon
@@ -51,6 +63,14 @@ local master_fn = function(inst)
 
   	-- Damage multiplier (optional)
     inst.components.combat.damagemultiplier = 1
+
+    show_witch_hat(inst)
+
+    inst:ListenForEvent("unequip", function(inst, data)
+        if data.eslot == EQUIPSLOTS.HEAD then
+          show_witch_hat(inst)
+        end
+    end)
 end
 
 return pf.MakePlayerCharacter("wtw_whitney", prefabs, assets, common_fn, master_fn, start_inv)

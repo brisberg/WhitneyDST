@@ -2,7 +2,6 @@ PrefabFiles = {
 	"wtw_whitney",
 	"wtw_whitney_none",
 	"wtw_lightstaff",
-	"wtw_hat",
 }
 
 Assets = {
