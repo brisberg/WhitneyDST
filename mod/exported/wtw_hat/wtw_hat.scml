@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
     <folder id="0" name="swap_hat">
-        <file id="0" name="swap_hat/swap_hat-0.png" width="300" height="300" pivot_x="0.476821" pivot_y="0.225166"/>
+        <file id="0" name="swap_hat/swap_hat-0.png" width="300" height="300" pivot_x="0.5" pivot_y="0.231788"/>
         <file id="1" name="swap_hat/swap_hat-1.png" width="300" height="300" pivot_x="0.506623" pivot_y="0.254967"/>
-        <file id="2" name="swap_hat/swap_hat-2.png" width="300" height="300" pivot_x="0.397351" pivot_y="0.254967"/>
+        <file id="2" name="swap_hat/swap_hat-2.png" width="300" height="300" pivot_x="0.5" pivot_y="0.239967"/>
         <file id="3" name="swap_hat/swap_hat-3.png" width="300" height="300" pivot_x="0.585485" pivot_y="0.159377"/>
     </folder>
     <entity id="0" name="wtw_hat">
