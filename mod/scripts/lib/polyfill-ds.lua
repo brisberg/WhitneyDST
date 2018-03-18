@@ -26,6 +26,7 @@ function loadfn(env)
     entity.__index.SetPristine = function(...) end
     return inst
   end
+  pf.MakeHauntableLaunch = function(...) end
 
   GLOBAL.global("TheWorld")
   GLOBAL.TheWorld = {

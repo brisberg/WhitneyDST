@@ -8,6 +8,7 @@ function loadfn(env)
       return GLOBAL.require("prefabs/player_common")(...)
   end
   pf.CreateEntity = GLOBAL.CreateEntity
+  pf.MakeHauntableLaunch = GLOBAL.MakeHauntableLaunch
 
   GLOBAL.global("pf")
   GLOBAL.pf = pf

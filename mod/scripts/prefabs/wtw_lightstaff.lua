@@ -61,6 +61,8 @@ local function fn(colour, tags, hasskin)
     end)
     inst.components.equippable:SetOnUnequip(onunequip)
 
+    pf.MakeHauntableLaunch(inst)
+
     return inst
 end
 
