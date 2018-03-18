@@ -121,8 +121,8 @@
         <file id="6" name="arm_upper/arm_upper-6.png" width="80" height="80" pivot_x="0.532181" pivot_y="0.739693"/>
     </folder>
     <folder id="9" name="cheeks">
-        <file id="0" name="cheeks/cheeks-0.png" width="64" height="60" pivot_x="0.508586" pivot_y="0.499592"/>
-        <file id="1" name="cheeks/cheeks-1.png" width="64" height="60" pivot_x="0.461711" pivot_y="0.482092"/>
+        <file id="0" name="cheeks/cheeks-0.png" width="64" height="60" pivot_x="0.508586" pivot_y="0.699592"/>
+        <file id="1" name="cheeks/cheeks-1.png" width="64" height="60" pivot_x="0.461711" pivot_y="0.699592"/>
     </folder>
     <folder id="10" name="hair_hat">
         <file id="0" name="hair_hat/hair_hat-0.png" width="400" height="400" pivot_x="0.50563" pivot_y="0.381312"/>
