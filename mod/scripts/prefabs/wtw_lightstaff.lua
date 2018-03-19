@@ -9,12 +9,34 @@ local assets =
     Asset( "ATLAS", "images/inventoryimages/"..name..".xml" ),
 }
 
+local prefabs =
+{
+    "wtw_lightstaff_fx",
+}
+
 local function onfinished(inst)
     inst.SoundEmitter:PlaySound("dontstarve/common/gem_shatter")
     inst:Remove()
 end
 
+local function onequip(inst, owner)
+  owner.AnimState:OverrideSymbol("swap_object", "swap_"..name, "swap_lightstaff")
+  owner.AnimState:Show("ARM_carry")
+  owner.AnimState:Hide("ARM_normal")
+
+  if inst.fire == nil then
+      inst.fire = SpawnPrefab("wtw_lightstaff_fx")
+      inst.fire.entity:AddFollower()
+      inst.fire.Follower:FollowSymbol(owner.GUID, "swap_object", 100, -200, 0)
+  end
+end
+
 local function onunequip(inst, owner)
+    if inst.fire ~= nil then
+        inst.fire:Remove()
+        inst.fire = nil
+    end
+
     owner.AnimState:Hide("ARM_carry")
     owner.AnimState:Show("ARM_normal")
 end
@@ -53,12 +75,7 @@ local function fn(colour, tags, hasskin)
     -- inst:AddComponent("tradable")
 
     inst:AddComponent("equippable")
-
-    inst.components.equippable:SetOnEquip(function(inst, owner)
-        owner.AnimState:OverrideSymbol("swap_object", "swap_"..name, "swap_lightstaff")
-        owner.AnimState:Show("ARM_carry")
-        owner.AnimState:Hide("ARM_normal")
-    end)
+    inst.components.equippable:SetOnEquip(onequip)
     inst.components.equippable:SetOnUnequip(onunequip)
 
     pf.MakeHauntableLaunch(inst)
@@ -69,4 +86,4 @@ end
 STRINGS.NAMES.WTW_LIGHTSTAFF = "Lightstaff"
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.WTW_LIGHTSTAFF = "The result of nature and starlight"
 
-return Prefab(name, fn, assets)
+return Prefab(name, fn, assets, prefabs)
