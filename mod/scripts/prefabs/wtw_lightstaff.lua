@@ -27,6 +27,7 @@ local function onequip(inst, owner)
   if inst.fire == nil then
       inst.fire = SpawnPrefab("wtw_lightstaff_fx")
       inst.fire.entity:AddFollower()
+      -- 100 away from body and 200 up to follow the head of the staff
       inst.fire.Follower:FollowSymbol(owner.GUID, "swap_object", 100, -200, 0)
   end
 end
@@ -77,6 +78,8 @@ local function fn(colour, tags, hasskin)
     inst:AddComponent("equippable")
     inst.components.equippable:SetOnEquip(onequip)
     inst.components.equippable:SetOnUnequip(onunequip)
+
+    inst:AddComponent("wtw_spellcaster")
 
     pf.MakeHauntableLaunch(inst)
 

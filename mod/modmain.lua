@@ -51,6 +51,9 @@ GLOBAL.STRINGS.CHARACTER_QUOTES.wtw_whitney = "\"Of course I'm great with plants
 -- Custom speech strings
 GLOBAL.STRINGS.CHARACTERS.WTW_WHITNEY = require "speech_wtw_whitney"
 
+-- Load the custom actions
+modimport "scripts/actions/actions.lua"
+
 -- Let the game know character is male, female, or robot
 table.insert(GLOBAL.CHARACTER_GENDERS.FEMALE, "wtw_whitney")
 
