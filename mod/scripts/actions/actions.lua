@@ -57,7 +57,8 @@ local WTW_CASTGROW = AddAction("WTW_CASTGROW", "Cast Grow", function(act)
   return true
 end)
 WTW_CASTGROW.priority = 2
-WTW_CASTGROW.instant = true
+--WTW_CASTGROW.instant = true
+WTW_CASTGROW.distance = 30
 WTW_CASTGROW.rmb = true
 -- WTW_CASTGROW.testfn = function(act)
 --     print("wtw_castgrow test function")
@@ -83,5 +84,5 @@ AddComponentAction("POINT", "wtw_spellcaster", function(inst, doer, pos, actions
 end)
 
 
-AddStategraphActionHandler("wilson",ActionHandler(WTW_CASTGROW))
-AddStategraphActionHandler("wilson_client",ActionHandler(WTW_CASTGROW))
+AddStategraphActionHandler("wilson",ActionHandler(WTW_CASTGROW, "castspell"))
+AddStategraphActionHandler("wilson_client",ActionHandler(WTW_CASTGROW, "castspell"))
