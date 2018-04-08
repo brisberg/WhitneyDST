@@ -1,17 +1,58 @@
 local Action = GLOBAL.Action
 local ActionHandler = GLOBAL.ActionHandler
+local TheSim = GLOBAL.TheSim
 -- local languageStrings = require('lang/' .. GetModConfigData("LANGUAGE"))
 -- local bpx = GLOBAL.bpx
+local TUNING = GLOBAL.TUNING
+
+--helper function for book_gardening
+local function trygrowth(inst)
+    if inst:IsInLimbo()
+        or (inst.components.witherable ~= nil and
+            inst.components.witherable:IsWithered()) then
+        return
+    end
+
+    if inst.components.pickable ~= nil then
+        if inst.components.pickable:CanBePicked() and inst.components.pickable.caninteractwith then
+            return
+        end
+        inst.components.pickable:FinishGrowing()
+    end
+
+    if inst.components.crop ~= nil then
+        inst.components.crop:DoGrow(TUNING.TOTAL_DAY_TIME * 3, true)
+    end
+
+    if inst.components.growable ~= nil and
+        (inst:HasTag("tree") or inst:HasTag("winter_tree")) and
+        not inst:HasTag("stump") then
+        inst.components.growable:DoGrowth()
+    end
+
+    if inst.components.harvestable ~= nil and inst.components.harvestable:CanBeHarvested() and inst:HasTag("mushroom_farm") then
+        inst.components.harvestable:Grow()
+    end
+end
 
 -- Retreat Action
 local WTW_CASTGROW = AddAction("WTW_CASTGROW", "Cast Grow", function(act)
   print("Running the WTW_CASTGROW act fn")
-  if act.target and act.target.components.pickable then
-      act.doer.components.talker:Say("Grow")
-      if act.target.components.pickable:CanBePicked() and act.target.components.pickable.caninteractwith then
-          return false
+  -- act.doer.components.sanity:DoDelta(-TUNING.SANITY_LARGE)
+
+  local range = 5
+  local ents = TheSim:FindEntities(act.pos.x, act.pos.y, act.pos.z, range, nil, { "pickable", "stump", "withered", "INLIMBO" })
+  if #ents > 0 then
+      trygrowth(table.remove(ents, math.random(#ents)))
+      if #ents > 0 then
+          local timevar = 1 - 1 / (#ents + 1)
+          for i, v in ipairs(ents) do
+              v:DoTaskInTime(timevar * math.random(), trygrowth)
+          end
       end
-      act.target.components.pickable:FinishGrowing()
+  end
+  if act.invobject and act.invobject.components.finiteuses then
+    act.invobject.components.finiteuses:Use()
   end
   return true
 end)
@@ -30,7 +71,7 @@ WTW_CASTGROW.rmb = true
 --     end
 -- end
 
-AddComponentAction("EQUIPPED", "wtw_spellcaster", function(inst, doer, target, actions, right)
+AddComponentAction("POINT", "wtw_spellcaster", function(inst, doer, pos, actions, right)
   -- print("Collect Scene Actions for ttb_pet")
   if right then
     -- if target.replica.pickable ~= nil and
