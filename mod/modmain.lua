@@ -55,10 +55,24 @@ GLOBAL.STRINGS.CHARACTERS.WTW_WHITNEY = require "speech_wtw_whitney"
 modimport "scripts/actions/actions.lua"
 
 -- Let the game know character is male, female, or robot
-table.insert(GLOBAL.CHARACTER_GENDERS.FEMALE, "wtw_whitney")
+--table.insert(GLOBAL.CHARACTER_GENDERS.FEMALE, "wtw_whitney")
 
 RemapSoundEvent( "dontstarve/characters/wtw_whitney/death_voice", "wtw_whitney_speech/characters/wtw_whitney/death_voice" )
 RemapSoundEvent( "dontstarve/characters/wtw_whitney/hurt", "wtw_whitney_speech/characters/wtw_whitney/hurt" )
 RemapSoundEvent( "dontstarve/characters/wtw_whitney/talk_LP", "wtw_whitney_speech/characters/wtw_whitney/talk_LP" )
 AddMinimapAtlas("images/map_icons/wtw_whitney.xml")
 AddModCharacter("wtw_whitney", "FEMALE")
+
+local Ingredient = GLOBAL.Ingredient
+AddRecipe(
+	"wtw_lightstaff",
+	{
+		Ingredient("lightbulb", 1),
+		Ingredient("spear", 1)
+	},
+	GLOBAL.RECIPETABS.MAGIC,
+	GLOBAL.TECH.NONE,
+	nil, nil, nil, nil, "wtw_lightstaff_builder",
+	"images/inventoryimages/wtw_lightstaff.xml",
+	"wtw_lightstaff.tex")
+GLOBAL.STRINGS.RECIPE_DESC.WTW_LIGHTSTAFF = "Assists in growing plants"

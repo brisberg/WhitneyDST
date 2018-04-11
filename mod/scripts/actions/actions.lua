@@ -60,20 +60,9 @@ WTW_CASTGROW.priority = 2
 --WTW_CASTGROW.instant = true
 WTW_CASTGROW.distance = 30
 WTW_CASTGROW.rmb = true
--- WTW_CASTGROW.testfn = function(act)
---     print("wtw_castgrow test function")
---     local plant = act.target
---     -- check if combatant is in combat
---     if plant.components.pickable ~= nil then
---         if plant.components.pickable:CanBePicked() and plant.components.pickable.caninteractwith then
---             return false
---         end
---         return true
---     end
--- end
 
 AddComponentAction("POINT", "wtw_spellcaster", function(inst, doer, pos, actions, right)
-  -- print("Collect Scene Actions for ttb_pet")
+  -- print("Collect Point Actions for wtw_spellcaster")
   if right then
     -- if target.replica.pickable ~= nil and
     --    not target.replica.pickable:CanBePicked() and

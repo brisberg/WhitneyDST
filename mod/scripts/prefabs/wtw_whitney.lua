@@ -66,6 +66,8 @@ local master_fn = function(inst)
 
     show_witch_hat(inst)
 
+    inst:AddTag("wtw_lightstaff_builder")
+
     inst:ListenForEvent("unequip", function(inst, data)
         if data.eslot == EQUIPSLOTS.HEAD then
           show_witch_hat(inst)
